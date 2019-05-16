@@ -25,6 +25,12 @@ before_script:
 test:
   script:
   - python setup.py test
+  artifacts:
+    paths:
+    - tests/results.xml
+    reports:
+      junit:
+      - tests/results.xml
 
 #run:
 #  script:
